@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>防詐資訊平台</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>165 防詐資訊平台</h1>
+
+        <p>
+            常見詐騙類型與防詐資訊
+        </p>
+    </header>
+
+
+    <main>
+
+        <section id="list-section">
+
+            <div class="search-area">
+
+                <input type="text" id="search-input" placeholder="輸入關鍵字，例如 LINE、OTP、投資、保證金">
+
+                <button id="search-button">
+                    搜尋
+                </button>
+
+                <button id="clear-button">
+                    清除
+                </button>
+
+            </div>
+
+
+            <p id="search-message"></p>
+
+
+            <h2>詐騙類型</h2>
+
+            <div id="fraud-list">
+                資料載入中...
+            </div>
+
+        </section>
+
+
+        <section id="detail-section" class="hidden">
+
+            <button id="back-button">
+                ← 返回詐騙列表
+            </button>
+
+            <div id="fraud-detail">
+            </div>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <h2>資料統計</h2>
+
+
+            <div class="summary-cards">
+
+                <div class="summary-card">
+
+                    <h3 id="fraud-count">
+                        -
+                    </h3>
+
+                    <p>
+                        詐騙類型
+                    </p>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <h3 id="detail-count">
+                        -
+                    </h3>
+
+                    <p>
+                        防詐資訊
+                    </p>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <h3 id="case-count">
+                        -
+                    </h3>
+
+                    <p>
+                        詐騙案例
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="chart-container">
+
+                <h3>
+                    常見詐騙關鍵字
+                </h3>
+
+                <canvas id="keyword-chart"></canvas>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>

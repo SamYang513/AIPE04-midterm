@@ -1,0 +1,33 @@
+# Python 快取
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 虛擬環境
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# 系統檔案
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 環境變數與金鑰
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 暫存與日誌
+*.log
+tmp/
+temp/
